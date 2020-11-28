@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Feedback Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Texturina&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			html, body {
+				height: 100%;
+				background-color: #91EBCC;
+			}
+			.container {
+				min-height: 100%;
+			}
+			main {
+				overflow: auto;
+				padding-bottom: 100px;
+			}
+
+
+			/*HEADER*/
+			header {
+				width: 100%;
+				height: 100px;
+				border-bottom: 2px solid #111;
+			}
+			header .header-logo {
+				font-family: 'Texturina', serif;
+				font-size: 24px;
+				font-weight: 900;
+				color: #111;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				padding: 20px 0;
+			}
+			header nav ul{
+				display: block;
+				margin: 0 auto;
+				width: fit-content;
+			}
+			header nav ul li{
+				display: inline-block;
+				float: left;
+				list-style: none;
+				padding: 0 16px;
+			}
+			header nav ul li a{
+				font-family: 'Texturina', serif;
+				font-size: 16px;
+				color: #111;
+				text-transform: uppercase;
+			}
+
+			@media only screen and (min-width: 1000px) {
+				header .header-logo {
+					margin: 31px 0;
+					text-align: left;
+					line-height: 38px;
+					padding: 0 20px 0 40px;
+					border-right: 3px solid #111;
+					float: left;
+				}
+				header nav ul{
+					margin: 20px 0px 0px 20px;
+					float: left;
+				}
+				header nav ul li a{
+					line-height: 60px;
+				}
+			}
+
+
+			/*FORMBOX*/
+			.formBox {
+				padding-bottom: 20px;
+			}
+			.formBox form {
+				font-family: 'Source Sans Pro', sans-serif;
+				margin: 12px 12px 0;
+				padding: 12px 5px;
+				width: calc(100% - 34px);
+				background-color: #f3f3f3;
+				box-shadow: 0 2px 5px #ccc;
+			}
+			.formBox h1 {
+				text-align: center;
+				font-weight: bold;
+			}
+			.formBox p {
+				text-align: center;
+			}
+			.formBox h4 {
+				margin: 22px 0 4px;
+				color: #095484;
+			}
+			.formBox label {
+				margin-right: 10px;
+			}
+			input {
+				padding: 5px;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				display: inline-block;
+			}
+			input:hover, textarea:hover {
+				outline: none;
+				border: 1px solid #095484;
+			}
+			.first-name {
+				margin-bottom: 10px;
+			}
+			.formBox span {
+				color: red;
+			}
+			textarea {
+				width: calc(100% - 6px);
+			}
+			.btn-block {
+				margin-top: 20px;
+				text-align: center;
+			}
+			button {
+				width: 150px;
+				padding: 10px;
+				border: none;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				background-color: #095484;
+				font-size: 16px;
+				color: #fff;
+				cursor: pointer;
+			}
+			button:hover {
+				background-color: #0666a3;
+			}
+
+			@media only screen and (min-width: 1000px) {
+				.wrapper {
+					width: 1000px;
+					margin: 0 auto;
+				}
+			}
+
+
+			/*FOOTER*/
+			footer {
+				width: 100%;
+				height: 100px;
+				position: relative;
+				margin-top: -100px;
+				clear: both;
+				background-color: #111;
+			}
+			footer p{
+				font-family: 'Texturina', serif;
+				font-size: 12px;
+				text-height: 15px;
+				color: #fff;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				padding: 40.5px 0;
+			}
+		</style>
+	</head>
+	<body>
+
+		<header>
+			<a href="index.html" class="header-logo">AmarKou</a>
+			<nav>
+				<ul>
+					<li><a href="recipe.html">Recipe</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="container">
+			<main>
+				<div class="wrapper">
+					<section class="formBox">
+							<form action="/">
+
+								<h1>Feedback Form</h1>
+								<p>I would love to hear your thoughts, suggestions, concerns or problems with anything so I can improve!</p>
+
+								<h4>Name <span>*</span></h4>
+								<input class="first-name" type="text" name="name" placeholder="First Name" required />
+								<input type="text" name="name" placeholder="Last Name" required />
+
+								<h4>Email <span>*</span></h4>
+								<input type="email" name="email" placeholder="example@email.com" required />
+
+								<h4>Feedback Type</h4>
+								<input type="radio" value="Comments" name="fType" />
+								<label>Comments</label>
+								<input type="radio" value="Suggestions" name="fType" />
+								<label>Suggestions</label>
+								<input type="radio" value="Questions" name="fType" />
+								<label>Questions</label>
+
+								<h4>Describe Your Feedback: <span>*</span></</h4>
+								<textarea rows="5" placeholder="Type here..." required></textarea>
+								<small>* The information given within the Feedback Form will be used for service improvement only and are strictly confidential.</small>
+
+								<div class="btn-block">
+									<button type="submit" href="/">Submit Feedback</button>
+								</div>
+
+							</form>
+						</section>
+				</div>
+			</main>
+		</div>
+
+		<footer>
+			<p>Copyright &copy; 2020, AmarKou. All rights reserved.</p>
+		</footer>
+
+	</body>
+</html>
