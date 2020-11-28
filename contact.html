@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Texturina&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <style>
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			html, body {
+				height: 100%;
+				background-color: #91EBCC;
+			}
+			.container {
+				min-height: 100%;
+			}
+			main {
+				font-family: 'Source Sans Pro', sans-serif;
+				overflow: auto;
+				padding-bottom: 100px;
+			}
+
+
+			/*HEADER*/
+			header {
+				width: 100%;
+				height: 100px;
+				border-bottom: 2px solid #111;
+			}
+			header .header-logo {
+				font-family: 'Texturina', serif;
+				font-size: 24px;
+				font-weight: 900;
+				color: #111;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				padding: 20px 0;
+			}
+			header nav ul{
+				display: block;
+				margin: 0 auto;
+				width: fit-content;
+			}
+			header nav ul li{
+				display: inline-block;
+				float: left;
+				list-style: none;
+				padding: 0 16px;
+			}
+			header nav ul li a{
+				font-family: 'Texturina', serif;
+				font-size: 16px;
+				color: #111;
+				text-transform: uppercase;
+			}
+
+			@media only screen and (min-width: 1000px) {
+				header .header-logo {
+					margin: 31px 0;
+					text-align: left;
+					line-height: 38px;
+					padding: 0 20px 0 40px;
+					border-right: 3px solid #111;
+					float: left;
+				}
+				header nav ul{
+					margin: 20px 0px 0px 20px;
+					float: left;
+				}
+				header nav ul li a{
+					line-height: 60px;
+				}
+			}
+
+
+			/*MAIN*/
+			h2 {
+				font-size: 40px;
+				font-weight: 900;
+				line-height: 70px;
+				color: #111;
+				text-align: center;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+			.contactList {
+				margin: 16px 16px 0;
+				width: calc(100% - 32px);
+			}
+			.contactList table{
+				margin-left: auto;
+				margin-right: auto;
+				align:center;
+				letter-spacing:1px;
+				color: #fff;
+				background-color: #111;
+				padding: 20px 10px 20px 10px;
+			}
+			.contactList a{
+				color: #fff;
+			}
+			.logo {
+				width: 15px;
+				padding-right: 5px;
+			}
+			.share {
+				margin: 16px 16px 0;
+				width: calc(100% - 32px);
+			}
+			.share fieldset{
+				padding: 16px 0;
+			}
+			.share h3{
+				text-align: center;
+			}
+			.share input{
+				margin: 16px auto 0;
+				display: block;
+			}
+			.btn-block {
+				margin-top: 12px;
+				text-align: center;
+			}
+			.btn-block button{
+				width: 100px;
+				padding: 10px;
+				border: none;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				background-color: #095484;
+				font-size: 12px;
+				color: #fff;
+				cursor: pointer;
+			}
+			.btn-block button:hover{
+				background-color: #0666a3;
+			}
+
+
+			@media only screen and (min-width: 1000px) {
+				.wrapper {
+					width: 1000px;
+					margin: 0 auto;
+				}
+			}
+
+
+			/*FOOTER*/
+			footer {
+				width: 100%;
+				height: 100px;
+				position: relative;
+				margin-top: -100px;
+				clear: both;
+				background-color: #111;
+			}
+			footer p{
+				font-family: 'Texturina', serif;
+				font-size: 12px;
+				text-height: 15px;
+				color: #fff;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				padding: 40.5px 0;
+			}
+		</style>
+	</head>
+	<body>
+
+    <header>
+			<a href="index.html" class="header-logo">AmarKou</a>
+			<nav>
+				<ul>
+					<li><a href="recipe.html">Recipe</a></li>
+					<li><a href="about.html">About</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+				</ul>
+			</nav>
+		</header>
+
+    <div class="container">
+			<main>
+
+				<h2>Contact</h2>
+
+				<div class="wrapper">
+					<section class="contactList">
+						<table>
+							<tr>
+								<td><img class="logo" src="img/gmail.png" alt="Gmail Logo"></td>
+								<td>afiqride@gmail.com</td>
+							</tr>
+							<tr>
+								<td><img class="logo" src="img/instagram.png" alt="Instagram Logo"></td>
+								<td><a href="https://www.instagram.com/afiqibnuazam/" target="_blank">@afiqibnuazam</a></td>
+							</tr>
+							<tr>
+								<td><img class="logo" src="img/phone.png" alt="Phone Symbol"></td>
+								<td>+6019 326 XXXX</td>
+							</tr>
+						</table>
+					</section>
+
+					<section class="share">
+						<fieldset>
+							<h3>Share Your Recipe Ideas With Me!!</h3>
+							<input type="file" name="file">
+							<div class="btn-block">
+								<button type="submit" href="/">SUBMIT</button
+							</div>
+						</fieldset>
+					</section>
+				</div>
+
+			</main>
+		</div>
+
+		<footer>
+			<p>Copyright &copy; 2020, AmarKou. All rights reserved.</p>
+		</footer>
+
+	</body>
+</html>
